@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Street BLOCK | CSS</title>
+    <style>
+        body {
+            background-color: #223;
+        }
+        .street {
+            border: 1px solid;
+            border-bottom-width: 20px;
+            border-bottom-color: SaddleBrown;
+            border-bottom-right-radius: 3rem;
+        }
+        .house {
+            width: 100px;
+            height: 150px;
+            /* border: 2px solid green; */
+            display: inline-block;
+        }
+        .building-tall {
+            width: 100px;
+            height: 300px;
+            background-color: DimGray;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+        .moon {
+            width: 50px;
+            /* background-color: white; */
+            display: inline-block;
+            vertical-align: top;
+            padding-left: 20px;
+            padding-top: 40px;
+        }
+        .building-small { 
+            width: 240px;
+            height: 100px;
+            display: inline-block;
+            vertical-align: bottom;
+        }
+
+        .house-roof {
+            height: 0px;
+            width: 0px;
+            /* background-color: red; */
+            /* triangle */
+            border: 50px solid white;
+            border-top-width: 0px;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            border-bottom-color: DarkSlateBlue;
+            border-bottom-width: 70px;
+        }
+        .house-wall {
+            background-color: SlateGray;
+            height: 80px;
+        }
+        .house-window {
+            width: 30px;
+            height: 30px;
+            border: 2px solid DarkSlateBlue;
+
+            transform: translateX(33px) translateY(23px);
+        }
+        .left-sub-window {
+            width: 13px;
+            height: inherit;
+            background-color: GoldenRod;
+            border-right: 2px solid DarkSlateBlue;
+            display: inline-block;
+            margin-right: -4px;
+        }
+        .right-sub-window {
+            width: 13px;
+            height: inherit;
+            background-color: GoldenRod;
+            border-left: 2px solid DarkSlateBlue;
+            display: inline-block;
+        }
+        .level1 {
+            background-color: grey;
+            width: 80px;
+            height: 75px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .level2 {
+            background-color: grey;
+            width: 80px;
+            height: 75px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .level3 {
+            background-color: grey;
+            width: 80px;
+            height: 75px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .window-level1 {
+            background-color: SeaGreen;
+            border: 4px solid #585858;
+            width: 60px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-width: 18px;
+            border-bottom-width: 18px; 
+        }
+        .window-level2 {
+            background-color: Chocolate;
+            border: 4px solid #585858;
+            width: 60px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-width: 18px;
+            border-bottom-width: 18px;
+        }
+        .window-level3 {
+            background-color: Indigo;
+            border: 4px solid #585858;
+            width: 60px;
+            height: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            border-top-width: 18px;
+            border-bottom-width: 18px;
+        }
+        .B-small-window1 {
+            height: 85px;
+            width: 70px;
+            display: inline-block;
+            margin-right: -4px;
+            border: 1px solid #202020;
+            border-top-width: 10px;
+            vertical-align: bottom;
+            border-left-width: 10px;
+            border-bottom-width: 5px;
+            background-color: #404040;
+            
+        }
+        .B-small-window2 {
+            height: 85px;
+            width: 70px;
+            display: inline-block;
+            margin-right: -4px;
+            border: 1px solid #202020;
+            border-top-width: 10px;
+            vertical-align: bottom;
+            border-bottom-width: 5px;
+            background-color: #404040;
+        }
+        .B-small-window3 {
+            height: 85px;
+            width: 70px;
+            display: inline-block;
+            margin-right: -4px;
+            border: 1px solid #202020;
+            border-top-width: 10px;
+            vertical-align: bottom;
+            border-right-width: 10px;
+            border-bottom-width: 5px;
+            background-color: #404040;
+        }
+        .tree {
+            display: inline-block;
+            vertical-align: bottom;
+            font-size: 100px;
+            line-height: 85px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="street">
+        <div class="house">
+            <div class="house-roof"></div>
+            <div class="house-wall">
+                <div class="house-window">
+                    <div class="left-sub-window"></div>
+                    <div class="right-sub-window"></div>
+                </div>
+            </div>
+        </div>
+      
+        <div class="building-tall"><br>
+            <div class="level1">
+                <div class="window-level1"></div>
+            </div>
+            <br>
+            <div class="level2">
+                <div class="window-level2"></div>
+            </div>
+            <br>
+            <div class="level3">
+                <div class="window-level3"></div>
+            </div>
+        </div>
+
+        <div class="building-small">
+            <div class="B-small-window1"></div>
+            <div class="B-small-window2"></div>
+            <div class="B-small-window3"></div>
+        </div>
+        <div class="moon">
+            <img src="https://icons.iconarchive.com/icons/google/noto-emoji-travel-places/48/42645-crescent-moon-icon.png" alt="">
+        </div>
+
+        <div class="tree">
+            🌳
+        </div>
+
+    </div>
+    
+</body>
+</html>
